@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: bc07f2eb90e36f34888346abd22899d9
+timeCreated: 1434591358
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Circle
+    21300002: Rectangle
+    21300004: Triangle
+    21300006: ChangeButton
+    21300008: Circle2
+    21300010: Rectangle2
+    21300012: Triangle2
+    21300014: Ground
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Circle
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1900
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rectangle
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1916
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Triangle
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1884
+        width: 114
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChangeButton
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1855
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Circle2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1738
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rectangle2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1758
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Triangle2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1735
+        width: 112
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ground
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1808
+        width: 1323
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
