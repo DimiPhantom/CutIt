@@ -8,11 +8,11 @@ public class Script_StageMove : MonoBehaviour {
 	public Button RightBtn;
 	public Text StageTxt;
 	public static int Stage=1;
-	public static int Level=1;
+	public static int Level=5;
 	public int[] EnabledButton;
 
 	public Button[] StageBtn;
-	// Use this for initialization
+
 	void Start () {
 
 		for (int i=1; i<=5; i++) {
@@ -23,9 +23,8 @@ public class Script_StageMove : MonoBehaviour {
 		EnabledButton [0] = 1;
 
 		for (int i=0; i<10; i++) {
-			StageBtn[i].onClick.AddListener(delegate {
-				Application.LoadLevel("Game");
-			});
+			int tmp=i;
+			StageBtn[i].onClick.AddListener(()=>{StartGame(tmp);});
 		}
 		LeftBtn.onClick.AddListener (delegate {
 			if (Stage != 1) {
@@ -38,8 +37,11 @@ public class Script_StageMove : MonoBehaviour {
 			}
 		});
 	}
-	
-	// Update is called once per frame
+	void StartGame(int param)
+	{
+		Level = param + 1;
+		Application.LoadLevel("Game");
+	}
 	void Update () {
 		StageTxt.text = "Level " + Stage.ToString ();
 		for (int i=0; i<10; i++) {

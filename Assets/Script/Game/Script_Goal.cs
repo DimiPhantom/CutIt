@@ -5,10 +5,12 @@ using UnityEngine.UI;
 public class Script_Goal : MonoBehaviour {
 
 	public GameObject Ball;
+	public GameObject BallPos;
 	public Canvas Result;
 	public Button OK;
 	public Text Stage;
 	public GameObject Maps;
+	public GameObject Objects;
 
 	void Start()
 	{
@@ -31,13 +33,17 @@ public class Script_Goal : MonoBehaviour {
 			Script_StageMove.Stage++;
 			Script_StageMove.Level = 1;
 		}
+
+
 		Maps.transform.FindChild (Script_StageMove.Stage + "-" + Script_StageMove.Level).gameObject.SetActive(true);
-		Ball.transform.position = new Vector3 (149, 238, 0);
 		Ball.GetComponent<Rigidbody2D> ().gravityScale = 0;
 		Ball.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
-		foreach (GameObject A in Script_DragButton.prefabs) {
+
+		Stage.GetComponent<Script_Stage> ().changeStage ();
+		foreach (GameObject A in Script_StartButton.prefabs) {
 			Destroy (A);
 		}
+		Objects.SetActive (true);
 		Stage.text = "Stage " + Script_StageMove.Stage.ToString() + "-" + Script_StageMove.Level.ToString();
 		Result.enabled = false;
 	}
