@@ -11,6 +11,7 @@ public class Script_Goal : MonoBehaviour {
 	public Text Stage;
 	public GameObject Maps;
 	public GameObject Objects;
+	public GameObject ToggleBlock;
 
 	void Start()
 	{
@@ -29,7 +30,7 @@ public class Script_Goal : MonoBehaviour {
 		Maps.transform.FindChild (Script_StageMove.Stage + "-" + Script_StageMove.Level).gameObject.SetActive(false);
 		EncryptedPlayerPrefs.SetInt (Script_StageMove.Stage+"-"+Script_StageMove.Level,1);
 		Script_StageMove.Level++;
-		if (Script_StageMove.Level == 10) {
+		if (Script_StageMove.Level == 11) {
 			Script_StageMove.Stage++;
 			Script_StageMove.Level = 1;
 		}

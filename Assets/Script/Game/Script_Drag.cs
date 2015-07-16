@@ -22,11 +22,17 @@ public class Script_Drag : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0)) {
 			if(isDrag)
 			{
-				if(!name.Contains("Clone"))
+				if(name.Contains("Clone"))
 				{
 					if(transform.position.x>422.2f && transform.position.y<83.6f)
 					{
-						Debug.Log("1");
+						Destroy (this.gameObject);
+					}
+				}
+				else
+				{
+					if(transform.position.x>422.2f && transform.position.y<83.6f)
+					{
 						PositionChange();
 					}
 					else

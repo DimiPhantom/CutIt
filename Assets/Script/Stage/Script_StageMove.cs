@@ -7,8 +7,8 @@ public class Script_StageMove : MonoBehaviour {
 	public Button LeftBtn;
 	public Button RightBtn;
 	public Text StageTxt;
-	public static int Stage=1;
-	public static int Level=5;
+	public static int Stage=3;
+	public static int Level=1;
 	public int[] EnabledButton;
 
 	public Button[] StageBtn;
@@ -48,6 +48,10 @@ public class Script_StageMove : MonoBehaviour {
 			if(EnabledButton[(Stage-1)*10+i]==0)
 			{
 				StageBtn[i].interactable=false;
+			}
+			else
+			{
+				StageBtn[i].interactable=true;
 			}
 			StageBtn [i].GetComponentInChildren<Text> ().text = Stage.ToString () + "-" + (i + 1).ToString ();
 		}
