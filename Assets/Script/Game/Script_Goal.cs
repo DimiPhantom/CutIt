@@ -21,7 +21,7 @@ public class Script_Goal : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.name == "Ball") {
+		if (other.name == "Ball" && other.GetComponent<SpriteRenderer>().color==new Color(255, 255, 255, 124)) {
 			Result.enabled=true;
 		}
 	}

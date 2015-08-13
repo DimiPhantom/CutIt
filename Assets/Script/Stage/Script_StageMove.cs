@@ -7,8 +7,8 @@ public class Script_StageMove : MonoBehaviour {
 	public Button LeftBtn;
 	public Button RightBtn;
 	public Text StageTxt;
-	public static int Stage=3;
-	public static int Level=1;
+	public static int Stage=4;
+	public static int Level=3;
 	public int[] EnabledButton;
 
 	public Button[] StageBtn;

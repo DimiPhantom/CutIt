@@ -25,12 +25,22 @@ public class Script_Ball : MonoBehaviour {
 			Objects.SetActive (true);
 			ToggleBlock = GameObject.FindGameObjectsWithTag ("ToggleBlock");
 			foreach (GameObject A in ToggleBlock) {
-				A.GetComponent<SpriteRenderer>().enabled=true;
-				A.GetComponent<BoxCollider2D>().enabled=true;
-				A.GetComponent<Rigidbody2D>().velocity=new Vector2(0,0);
+				A.GetComponent<SpriteRenderer> ().enabled = true;
+				A.GetComponent<BoxCollider2D> ().enabled = true;
+				A.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 			}
 			foreach (GameObject A in Script_StartButton.prefabs) {
 				Destroy (A);
+			}
+		}
+		if (other.collider.name.Length>5 && other.collider.name.Substring (0, 5) == "White") {
+			if(GetComponent<SpriteRenderer>().color!=new Color(0,0,0,255))
+			{
+				GetComponent<SpriteRenderer>().color=new Color(0, 0, 0, 255);
+			}
+			else
+			{
+				GetComponent<SpriteRenderer>().color=new Color(255, 255, 255, 124);
 			}
 		}
 	}

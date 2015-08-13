@@ -19,6 +19,7 @@ public class Script_StopButton : MonoBehaviour {
 		Ball.transform.position = BallPos.transform.position;
 		Ball.GetComponent<Rigidbody2D> ().gravityScale = 0;
 		Ball.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
+		Ball.GetComponent<SpriteRenderer> ().color = new Color (255, 255, 255, 124);
 		Objects.SetActive(true);
 		foreach (GameObject A in Script_StartButton.prefabs) {
 			Destroy (A);

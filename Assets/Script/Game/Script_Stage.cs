@@ -82,6 +82,27 @@ public class Script_Stage : MonoBehaviour {
 		} else if (Script_StageMove.Level == 6 && Script_StageMove.Stage == 3) {
 			BallPos.transform.position = new Vector3 (181, 292, 0);
 			Goal.transform.position = new Vector3 (242, 176, 0);
+		} else if (Script_StageMove.Level == 7 && Script_StageMove.Stage == 3) {
+			BallPos.transform.position = new Vector3 (49, 169, 0);
+			Goal.transform.position = new Vector3 (290, 153, 0);
+		} else if (Script_StageMove.Level == 8 && Script_StageMove.Stage == 3) {
+			BallPos.transform.position = new Vector3 (313, 193, 0);
+			Goal.transform.position = new Vector3 (360, 81, 0);
+		} else if (Script_StageMove.Level == 9 && Script_StageMove.Stage == 3) {
+			BallPos.transform.position = new Vector3 (306, 140, 0);
+			Goal.transform.position = new Vector3 (91, 106, 0);
+		} else if (Script_StageMove.Level == 10 && Script_StageMove.Stage == 3) {
+			BallPos.transform.position = new Vector3 (15, 243, 0);
+			Goal.transform.position = new Vector3 (389, 198, 0);
+		} else if (Script_StageMove.Level == 1 && Script_StageMove.Stage == 4) {
+			BallPos.transform.position = new Vector3 (118, 156, 0);
+			Goal.transform.position = new Vector3 (386, 75, 0);
+		} else if (Script_StageMove.Level == 2 && Script_StageMove.Stage == 4) {
+			BallPos.transform.position = new Vector3 (63, 243, 0);
+			Goal.transform.position = new Vector3 (386, 75, 0);
+		} else if (Script_StageMove.Level == 3 && Script_StageMove.Stage == 4) {
+			BallPos.transform.position = new Vector3 (118, 156, 0);
+			Goal.transform.position = new Vector3 (386, 75, 0);
 		}
 		else
 		{
